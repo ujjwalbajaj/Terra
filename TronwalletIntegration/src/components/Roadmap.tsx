@@ -2,6 +2,9 @@
 import React from 'react';
 import jhonsImage1 from "../images/jons_img1.png";
 import abouts from "../images/imag.jpg";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faArrowLeft} from "@fortawesome/free-solid-svg-icons/faArrowLeft";
+import {faArrowRight} from "@fortawesome/free-solid-svg-icons/faArrowRight";
 export function Roadmap() {
 
   return (
@@ -98,10 +101,10 @@ export function Roadmap() {
                         </div>
                         </div>
                         <a className="carousel-control-prev" href="#licens" role="button" data-slide="prev">
-                        <i className="fa fa-long-arrow-left" aria-hidden="true"></i>
+                        <FontAwesomeIcon icon={faArrowLeft}/>
                         </a>
                         <a className="carousel-control-next" href="#licens" role="button" data-slide="next">
-                        <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
+                        <FontAwesomeIcon icon={faArrowRight}/>
                         </a>
                     </div>
                     <p className="lorem"></p>

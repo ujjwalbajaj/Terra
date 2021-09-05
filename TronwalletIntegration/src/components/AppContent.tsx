@@ -10,7 +10,8 @@ import bgMain from "../images/bg_main.jpg";
 import blackJack from "../images/blackjack.jpg";
 import slotJs from "../images/slotjs.png";
 import comingSoon from "../images/COMING_SOON.jpg";
-
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faArrowLeft} from "@fortawesome/free-solid-svg-icons/faArrowLeft";
 export function AppContent() {
 
   return (
@@ -22,11 +23,11 @@ export function AppContent() {
             <div className="sidebar">
                <nav id="sidebar">
                   <div id="dismiss">
-                     <i className="fa fa-arrow-left"></i>
+                     <FontAwesomeIcon icon={faArrowLeft}/>
                   </div>
                   <ul className="list-unstyled components">
                      <li className="active">
-                        <a href="index.html">Home</a>
+                        <a href="#home">Home</a>
                      </li>
                      <li>
                         <a href="#about">About</a>
